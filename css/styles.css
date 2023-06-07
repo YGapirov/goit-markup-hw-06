@@ -743,6 +743,9 @@ img {
 .modal-field {
   margin-bottom: 8px;
 }
+.modal-field-coment {
+  margin-bottom: 16px;
+}
 
 .input-wrap {
   position: relative;
@@ -807,6 +810,7 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 16px;
+  padding-top: 8px;
   outline: transparent;
   resize: none;
   transition-duration: 250ms;
@@ -819,14 +823,35 @@ img {
 .modal-comment::placeholder {
   font-size: 12px;
   letter-spacing: 0.04em;
-  padding-top: 8px;
   color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-form-check {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   line-height: 1.2px;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 24px;
+}
+
+.modal-checkbox {
+  display: block;
+}
+
+.modal-form-check::before {
+  content: '';
+  display: block;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.modal-check:checked + .modal-form-check::before {
+  background-color: #404bbf;
+  background-image: url(../images/vector-icon.svg);
 }
