@@ -939,14 +939,24 @@ img {
   fill: var(--primary-white-color);
 }
 
-.checkbox:checked {
+.checkbox:checked + .checkbox-label .checkbox-icon {
   background-color: var(--accent-color);
   border: none;
   fill: var(--primary-white-color);
 }
 
+.checkbox:focus + .checkbox-label .checkbox-icon {
+  border-color: var(--accent-color);
+}
+
 .check-link {
   color: #4d5ae5;
+  transition: color 250 cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-link:hover,
+.check-link:focus {
+  color: var(--accent-color);
 }
 
 /* .modal-form-check::before {

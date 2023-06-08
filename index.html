@@ -505,6 +505,7 @@
     </footer>
 
     <!-- Модальне вікно -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -559,19 +560,18 @@
               type="checkbox"
               name="user-privacy"
               value="true"
-              class="checkbox"
+              class="checkbox visually-hidden"
             />
-            <label class="checkbox-label" for="user-privacy"
-              >I accept the terms and conditions of the&nbsp;
+            <label for="user-privacy" class="checkbox-label">
               <span class="checkbox-icon">
                 <svg class="icov-vector" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
+              I accept the terms and conditions of the&nbsp;
               <a href="#" class="check-link">Privacy Policy</a>
             </label>
           </div>
-
           <button type="submit" class="modal-btn btn">Send</button>
         </form>
       </div>
