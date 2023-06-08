@@ -534,6 +534,79 @@ img {
   fill: #f4f4fd;
 }
 
+/* Subscribe footer */
+
+.footer-sub {
+  margin-left: 80px;
+}
+
+.subscribe-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  color: var(--primary-white-color);
+  background-color: transparent;
+}
+
+.subscribe-input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  color: var(--primary-white-color);
+}
+
+.subscribe-btn {
+  width: 165px;
+  height: 40px;
+  background: #4d5ae5;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-white-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: #31d0aa;
+}
+
+.subscribe-icon {
+  fill: var(--primary-white-color);
+  margin-left: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-subscribe {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-white-color);
+  margin-bottom: 16px;
+}
+
 /* portfolio */
 .portfolio-main {
   padding-top: 96px;
@@ -838,9 +911,36 @@ img {
 
 .modal-checkbox {
   display: block;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
 
-.modal-form-check::before {
+.checkbox-icon {
+  display: inline-block;
+  /* position: absolute; */
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  background-color: var(--primary-white-color);
+}
+
+.icov-vector {
+  position: absolute;
+  background-size: content;
+  /* top: 4px;
+  left: 3px; */
+  /* transform: translateY(-50%); */
+
+  fill: var(--primary-white-color);
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: var(--accent-color);
+}
+/* .modal-form-check::before {
   content: '';
   display: block;
   cursor: pointer;
@@ -853,5 +953,5 @@ img {
 
 .modal-check:checked + .modal-form-check::before {
   background-color: #404bbf;
-  background-image: url(../images/vector-icon.svg);
-}
+  background-image: url(../images/vector.svg); 
+} */
