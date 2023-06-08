@@ -486,7 +486,7 @@
           <p class="item-subscribe">Subscribe</p>
 
           <form class="footer-subscribe-form">
-            <div class="subscribe-list">
+            <label class="subscribe-list">
               <input
                 type="text"
                 name="subscribe-email"
@@ -500,7 +500,7 @@
                   <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
               </button>
-            </div>
+            </label>
           </form>
         </div>
       </div>
@@ -519,8 +519,8 @@
           <div class="modal-field">
             <label for="user-name" class="input-label">Name</label>
             <div class="input-wrap">
-              <input type="text" name="user-name" id="user-name" class="modal-input" />
-              <svg class="modal-icon" width="18" height="18">
+              <input type="text" name="name" id="user-name" class="modal-input" />
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -529,7 +529,7 @@
             <label for="user-tel" class="input-label">Phone</label>
             <div class="input-wrap">
               <input type="text" name="user-tel" id="user-tel" class="modal-input" />
-              <svg class="modal-icon" width="18" height="18">
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -538,36 +538,39 @@
             <label for="user-email" class="input-label">Email</label>
             <div class="input-wrap">
               <input type="text" name="user-email" id="user-email" class="modal-input" />
-              <svg class="modal-icon" width="18" height="18">
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
           <div class="modal-field-coment">
-            <label for="user-text" class="input-label">Comment</label>
+            <label for="user-comment" class="input-label">Comment</label>
             <textarea
-              name="user-text"
-              id="user-text"
+              name="user-comment"
+              id="user-comment"
               class="modal-comment"
               placeholder="Text input"
             ></textarea>
           </div>
+
+          <!-- modal check -->
+
           <div class="modal-checkbox">
-            <label class="checkbox-label">
-              <div class="checkbox-wrap">
-                <input
-                  class="checkbox visually-hidden"
-                  type="checkbox"
-                  name="checkbox-icon"
-                  value="html"
-                />
-                <span class="checkbox-icon">
-                  <svg class="icov-vector" width="10" height="8">
-                    <use href="./images/icons.svg#icon-vector"></use>
-                  </svg>
-                </span>
-                I accept the terms and conditions of the&nbsp;<a href="#">Privacy Policy</a>
-              </div>
+            <input
+              id="user-privacy"
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+            />
+            <label class="checkbox-label" for="user-privacy"
+              >I accept the terms and conditions of the&nbsp;
+              <span class="checkbox-icon">
+                <svg class="icov-vector" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
+              <a href="#">Privacy Policy</a>
             </label>
           </div>
 
