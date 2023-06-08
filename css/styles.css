@@ -892,7 +892,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  /* color: rgba(46, 47, 66, 0.4); */
+  color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   padding: 8px 16px;
@@ -939,15 +939,16 @@ img {
   fill: var(--primary-white-color);
 }
 
-.check-link {
-  color: #4d5ae5;
-}
-
-.checkbox:checked + span {
+.checkbox:checked {
   background-color: var(--accent-color);
   border: none;
   fill: var(--primary-white-color);
 }
+
+.check-link {
+  color: #4d5ae5;
+}
+
 /* .modal-form-check::before {
   content: '';
   display: block;
