@@ -945,7 +945,7 @@ img {
   fill: var(--primary-white-color);
 }
 
-.checkbox:focus + .checkbox-label .checkbox-icon {
+.checkbox:hover + .checkbox-label .checkbox-icon {
   border-color: var(--accent-color);
 }
 
